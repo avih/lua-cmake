@@ -137,7 +137,7 @@ endif ( )
 
 ## BUILD
 # Create dynamic library
-add_library ( liblua SHARED ${SRC_LIB} ${LUA_DLL_RC} ${LUA_DEF} )
+add_library ( liblua ${SRC_LIB} ${LUA_DLL_RC} ${LUA_DEF} )
 target_link_libraries ( liblua ${LIBS} )
 set_target_properties ( liblua PROPERTIES OUTPUT_NAME lua CLEAN_DIRECT_OUTPUT 1 )
 if ( LUA_BUILD_AS_DLL )
